@@ -1,8 +1,10 @@
-package com.example.neufood_205yxb;
+package com.example.neufood_205yxb.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.neufood_205yxb.R;
 
 public class MainActivity extends AppCompatActivity {
 
