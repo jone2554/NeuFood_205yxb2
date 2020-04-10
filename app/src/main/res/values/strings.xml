@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">NeuFood_205yxb</string>
+    <string name="app_name">校园订餐系统</string>
+    <string name="title_home">主页</string>
+    <string name="title_collection">收藏</string>
+    <string name="title_search">搜索</string>
+    <string name="title_setting">设置</string>
+    <string name="search_hint">搜索口味</string>
+    <string name="search_label">搜索</string>
+    <string name="settings_description">设置描述</string>
 </resources>
