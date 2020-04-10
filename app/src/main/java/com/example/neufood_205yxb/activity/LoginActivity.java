@@ -1,5 +1,5 @@
 package com.example.neufood_205yxb.activity;
-
+//private String AppId="1106189944";
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.View;
@@ -10,13 +10,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.neufood_205yxb.R;
-import com.example.neufood_205yxb.bean.LoginBean;
+import com.example.neufood_205yxb.bean.UserInfo;
 import com.example.neufood_205yxb.listener.RetrofitListener;
 import com.example.neufood_205yxb.model.UserModel;
 
 
-public class LoginActivity extends BaseActivity implements View.OnClickListener,RetrofitListener<LoginBean>{
-    private String AppId="1106189944";
+public class LoginActivity extends BaseActivity implements View.OnClickListener,RetrofitListener<UserInfo>{
+
     private Button btnlogin;
     private TextView tvreg;
     private EditText username, userpass;
@@ -28,12 +28,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         userModel.userLogin(username.getText().toString().trim(), userpass.getText().toString().trim(),this);
     }
     @Override
-    public void onSuccess(LoginBean userId,int flag) {
-        System.out.println("==========================="+userId);
-        if (userId.getUserid().equals("0")) {
+    public void onSuccess(UserInfo userid,int flag) {
+        if (userid.getUser_id().equals("0")) {
             showToast("用户名或密码错误");
         } else {
-            saveUser(userId.getUserid());
+            saveUser(userid.getUser_id());
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
             showToast("登录成功");

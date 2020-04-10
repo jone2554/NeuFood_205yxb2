@@ -1,6 +1,5 @@
 package com.example.neufood_205yxb.service;
 
-import com.example.neufood_205yxb.bean.LoginBean;
 import com.example.neufood_205yxb.bean.Result;
 import com.example.neufood_205yxb.bean.UserInfo;
 
@@ -14,7 +13,7 @@ import retrofit2.http.Query;
 
 public interface UserService {
         @GET("userLogin.do")
-        Call<LoginBean> login(
+        Call<UserInfo> login(
                 @Query("username") String username,
                 @Query("userpass") String userpass
         );

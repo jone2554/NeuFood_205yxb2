@@ -10,15 +10,15 @@ public class UserInfo {
      * comment : 测试
      */
 
-    private int user_id;
+    private String userid;
     private String username;
     private String userpass;
     private String mobilenum;
     private String address;
     private String comment;
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUser_id(String user_id) {
+        this.userid = user_id;
     }
 
     public void setUsername(String username) {
@@ -41,8 +41,8 @@ public class UserInfo {
         this.comment = comment;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public String getUser_id() {
+        return userid;
     }
 
     public String getUsername() {
