@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">校园订餐系统</string>
+    <string name="app_name">订餐系统</string>
     <string name="title_home">主页</string>
     <string name="title_collection">收藏</string>
     <string name="title_search">搜索</string>

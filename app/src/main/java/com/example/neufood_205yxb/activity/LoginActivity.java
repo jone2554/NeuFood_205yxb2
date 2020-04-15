@@ -50,7 +50,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         userpass = (EditText) findViewById(R.id.password);
         btnlogin = (Button) findViewById(R.id.login);
         tvreg = (TextView) findViewById(R.id.reg);
-        cbremember=(CheckBox)findViewById(R.id.cb_remember);
+        cbremember=(CheckBox)findViewById(R.id.remember);
     }
 
     void initEvents() {

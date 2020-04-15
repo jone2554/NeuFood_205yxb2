@@ -1,6 +1,7 @@
 package com.example.neufood_205yxb.activity;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,9 +12,11 @@ import com.example.neufood_205yxb.bean.Result;
 import com.example.neufood_205yxb.listener.RetrofitListener;
 import com.example.neufood_205yxb.model.UserModel;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class RegisterActivity extends BaseActivity implements RetrofitListener<Result> {
     private Intent intent;
-    private ImageView reg_return;
+  private ImageView reg_return;
     private Button register;
     private EditText et_reg_user, et_reg_password, et_reg_repassword,
          et_reg_telephone, et_reg_adress, et_reg_comment;
@@ -27,7 +30,7 @@ public class RegisterActivity extends BaseActivity implements RetrofitListener<R
         et_reg_repassword = (EditText) findViewById(R.id.et_reg_repassword);
         et_reg_telephone = (EditText) findViewById(R.id.et_reg_telephone);
         et_reg_adress = (EditText) findViewById(R.id.et_reg_adress);
-//        et_reg_comment = (EditText) findViewById(R.id.et_reg_comment);
+        et_reg_comment = (EditText) findViewById(R.id.et_reg_comment);
         reg_return = (ImageView) findViewById(R.id.reg_return);
     }
 

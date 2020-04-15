@@ -1,6 +1,5 @@
 package com.example.neufood_205yxb.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
@@ -18,10 +17,10 @@ import com.example.neufood_205yxb.R;
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener
 {
-    private LinearLayout mTabshouye;
-    private LinearLayout mTabcollect;
-    private LinearLayout mTabsearch;
-    private LinearLayout mTabmy;
+    private LinearLayout Lshouye;
+    private LinearLayout Lcollect;
+    private LinearLayout Lsearch;
+    private LinearLayout Lmy;
 
     private ImageButton mImgshouye;
     private ImageButton mImgcollect;
@@ -51,23 +50,23 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
     private void initEvent()
     {
-        mTabshouye.setOnClickListener(this);
-        mTabcollect.setOnClickListener(this);
-        mTabsearch.setOnClickListener(this);
-        mTabmy.setOnClickListener(this);
+        Lshouye.setOnClickListener(this);
+        Lcollect.setOnClickListener(this);
+        Lsearch.setOnClickListener(this);
+        Lmy.setOnClickListener(this);
     }
 
     private void initView()
     {
-        mTabshouye = (LinearLayout) findViewById(R.id.id_tab_shouye);
-        mTabcollect = (LinearLayout) findViewById(R.id.id_tab_collect);
-        mTabsearch = (LinearLayout) findViewById(R.id.id_tab_search);
-        mTabmy = (LinearLayout) findViewById(R.id.id_tab_my);
+        Lshouye = (LinearLayout) findViewById(R.id.shouye);
+        Lcollect = (LinearLayout) findViewById(R.id.collect);
+        Lsearch = (LinearLayout) findViewById(R.id.search);
+        Lmy = (LinearLayout) findViewById(R.id.my);
 
-        mImgshouye = (ImageButton) findViewById(R.id.id_tab_shouye_img);
-        mImgcollect = (ImageButton) findViewById(R.id.id_tab_collect_img);
-        mImgsearch = (ImageButton) findViewById(R.id.id_tab_search_img);
-        mImgmy = (ImageButton) findViewById(R.id.id_tab_my_img);
+        mImgshouye = (ImageButton) findViewById(R.id.picshouye);
+        mImgcollect = (ImageButton) findViewById(R.id.piccollect);
+        mImgsearch = (ImageButton) findViewById(R.id.picshearch);
+        mImgmy = (ImageButton) findViewById(R.id.picmy);
 
         shouye= (TextView) findViewById(R.id.shouye);
         collect= (TextView) findViewById(R.id.collect);
@@ -169,16 +168,16 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         resetImgs();
         switch (v.getId())
         {
-            case R.id.id_tab_shouye:
+            case R.id.shouye:
                 setSelect(0);
                 break;
-            case R.id.id_tab_collect:
+            case R.id.collect:
                 setSelect(1);
                 break;
-            case R.id.id_tab_search:
+            case R.id.search:
                 setSelect(2);
                 break;
-            case R.id.id_tab_my:
+            case R.id.my:
                 setSelect(3);
                 break;
 

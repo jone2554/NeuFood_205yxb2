@@ -6,7 +6,7 @@
     android:orientation="horizontal" >
 
     <LinearLayout
-        android:id="@+id/id_tab_shouye"
+        android:id="@+id/shouye"
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="1"
@@ -14,7 +14,7 @@
         android:orientation="vertical" >
 
         <ImageButton
-            android:id="@+id/id_tab_shouye_img"
+            android:id="@+id/picshouye"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00000000"
@@ -30,7 +30,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/id_tab_collect"
+        android:id="@+id/collect"
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="1"
@@ -38,7 +38,7 @@
         android:orientation="vertical" >
 
         <ImageButton
-            android:id="@+id/id_tab_collect_img"
+            android:id="@+id/piccollect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00000000"
@@ -54,7 +54,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/id_tab_search"
+        android:id="@+id/search"
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="1"
@@ -62,7 +62,7 @@
         android:orientation="vertical" >
 
         <ImageButton
-            android:id="@+id/id_tab_search_img"
+            android:id="@+id/picshearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00000000"
@@ -78,7 +78,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/id_tab_my"
+        android:id="@+id/my"
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="1"
@@ -86,7 +86,7 @@
         android:orientation="vertical" >
 
         <ImageButton
-            android:id="@+id/id_tab_my_img"
+            android:id="@+id/picmy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00000000"
