@@ -14,7 +14,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.neufood_205yxb.R;
-
 public class MainActivity extends FragmentActivity implements View.OnClickListener
 {
     private LinearLayout Lshouye;
@@ -32,10 +31,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private Fragment mTab03;
     private Fragment mTab04;
 
-    private TextView shouye;
-    private TextView collect;
-    private TextView search;
-    private TextView my;
+    private TextView tshouye;
+    private TextView tcollect;
+    private TextView tsearch;
+    private TextView tmy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -68,10 +67,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         mImgsearch = (ImageButton) findViewById(R.id.picshearch);
         mImgmy = (ImageButton) findViewById(R.id.picmy);
 
-        shouye= (TextView) findViewById(R.id.shouye);
-        collect= (TextView) findViewById(R.id.collect);
-        search= (TextView) findViewById(R.id.search);
-        my= (TextView) findViewById(R.id.my);
+        tshouye= (TextView) findViewById(R.id.tshouye);
+        tcollect= (TextView) findViewById(R.id.tcollect);
+        tsearch= (TextView) findViewById(R.id.tsearch);
+        tmy= (TextView) findViewById(R.id.tmy);
     }
 
     private void setSelect(int i)
@@ -79,12 +78,12 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
         hideFragment(transaction);
-//        switch (i)
-//        {
+//       switch (i)
+//       {
 //            case 0:
 //                if (mTab01 == null)
 //                {
-//                    mTab01 = new HomeFragment();
+//                    mTab01 = new ShouyeFragment();
 //                    transaction.add(R.id.id_content, mTab01);
 //                } else
 //                {
@@ -96,7 +95,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 //            case 1:
 //                if (mTab02 == null)
 //                {
-//                    mTab02 = new CollectFragment();
+//                    mTab02 = new CollectFragmrnt();
 //                    transaction.add(R.id.id_content, mTab02);
 //                } else
 //                {
@@ -121,7 +120,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 //            case 3:
 //                if (mTab04 == null)
 //                {
-//                    mTab04 = new MeFragment();
+//                    mTab04 = new MyFragment4();
 //                    transaction.add(R.id.id_content, mTab04);
 //                } else
 //                {
@@ -143,22 +142,22 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         if (mTab01 != null)
         {
             transaction.hide(mTab01);
-            shouye.setTextColor(Color.parseColor("#8a8a8a"));
+            tshouye.setTextColor(Color.parseColor("#8a8a8a"));
         }
         if (mTab02 != null)
         {
             transaction.hide(mTab02);
-            collect.setTextColor(Color.parseColor("#8a8a8a"));
+            tcollect.setTextColor(Color.parseColor("#8a8a8a"));
         }
         if (mTab03 != null)
         {
             transaction.hide(mTab03);
-            search.setTextColor(Color.parseColor("#8a8a8a"));
+            tsearch.setTextColor(Color.parseColor("#8a8a8a"));
         }
         if (mTab04 != null)
         {
             transaction.hide(mTab04);
-            my.setTextColor(Color.parseColor("#8a8a8a"));
+            tmy.setTextColor(Color.parseColor("#8a8a8a"));
         }
     }
 
@@ -168,16 +167,16 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         resetImgs();
         switch (v.getId())
         {
-            case R.id.shouye:
+            case R.id.tshouye:
                 setSelect(0);
                 break;
-            case R.id.collect:
+            case R.id.tcollect:
                 setSelect(1);
                 break;
-            case R.id.search:
+            case R.id.tsearch:
                 setSelect(2);
                 break;
-            case R.id.my:
+            case R.id.tmy:
                 setSelect(3);
                 break;
 

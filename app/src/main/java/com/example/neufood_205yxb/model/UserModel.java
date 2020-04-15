@@ -7,12 +7,6 @@ import com.example.neufood_205yxb.bean.UserInfo;
 import com.example.neufood_205yxb.common.Constants;
 import com.example.neufood_205yxb.listener.RetrofitListener;
 import com.example.neufood_205yxb.service.UserService;
-
-import java.io.File;
-
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
-import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

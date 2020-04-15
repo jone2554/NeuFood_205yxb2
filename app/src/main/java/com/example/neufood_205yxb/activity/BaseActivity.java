@@ -8,10 +8,6 @@ import com.example.neufood_205yxb.R;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-/**
- * Created by Neusoft on 2017/4/25.
- */
-
 public abstract class BaseActivity extends AppCompatActivity {
     protected int layout_file= R.layout.activity_main;
     protected abstract void initViews();

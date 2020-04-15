@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="55dp"
     android:background="#EDEDED"
@@ -11,7 +12,8 @@
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        tools:ignore="DuplicateIds">
 
         <ImageButton
             android:id="@+id/picshouye"
@@ -22,7 +24,7 @@
             android:src="@drawable/tab_shouye_normal" />
 
         <TextView
-            android:id="@+id/shouye"
+            android:id="@+id/tshouye"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="首页"
@@ -46,7 +48,7 @@
             android:src="@drawable/tab_find_collect_normal" />
 
         <TextView
-            android:id="@+id/collect"
+            android:id="@+id/tcollect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="收藏"
@@ -70,7 +72,7 @@
             android:src="@drawable/tab_search_normal" />
 
         <TextView
-            android:id="@+id/search"
+            android:id="@+id/tsearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="搜索"
@@ -94,7 +96,7 @@
             android:src="@drawable/tab_my_normal" />
 
         <TextView
-            android:id="@+id/my"
+            android:id="@+id/tmy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="我"

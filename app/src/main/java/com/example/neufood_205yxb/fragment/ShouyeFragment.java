@@ -12,10 +12,10 @@ import androidx.fragment.app.Fragment;
  * Created by 袁旭博 on 2020/3/13.
  */
 
-public class Fragment1 extends Fragment {
+public class ShouyeFragment extends Fragment {
 
 
-    public Fragment1() {
+    public ShouyeFragment() {
         // Required empty public constructor
     }
 

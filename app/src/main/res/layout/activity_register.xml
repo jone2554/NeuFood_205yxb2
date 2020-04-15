@@ -31,7 +31,7 @@
             android:background="#009688"
             android:gravity="center_vertical"
             android:text="注册"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@color/color_title"
             android:textSize="24dp" />
     </LinearLayout>
 
@@ -40,7 +40,6 @@
         android:layout_height="40dp"
         android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
-        android:text="欢迎"
         android:textAlignment="center"
         android:textColor="#009688"
         android:textSize="34dp" />
@@ -188,7 +187,7 @@
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:background="#009688"
+        android:background="@drawable/cricle"
         android:text="注册"
         android:textColor="@android:color/background_dark"
         android:textSize="24dp" />
